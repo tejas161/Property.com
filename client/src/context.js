@@ -14,9 +14,9 @@ const AppProvider = ({ children }) => {
 
 
 //This is for localhost
-    // const url = 'http://44.201.156.0:8080';
+    const url = 'http://44.202.11.199:3001';
 
-   const url = '/api';
+//    const url = '/api';
 
 
 // const url = 'http://localhost:3001';
