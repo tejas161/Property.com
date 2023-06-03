@@ -117,12 +117,16 @@ const paymentVerification = async (req, res) => {
 
       
 
-        res.redirect(`http://3.83.106.29:8050/allproperties`);
+        // res.redirect(`http://localhost:3000/allproperties`);
+
+        res.redirect(`http://44.202.11.199/allproperties`)
 
         } else {
 
-          // res.redirect(`http://localhost:3000/allproperties`);
-         res.redirect(`http://3.83.106.29:8050/paymentfailed`);
+          
+        //  res.redirect(`http://localhost:3000/paymentfailed`);
+
+        res.redirect(`http://44.202.11.199/paymentfailed`);
         
       
     }

@@ -453,7 +453,7 @@ const PropertyDetails = () => {
             image: "https://images.pexels.com/photos/1162361/pexels-photo-1162361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             order_id: order.id, 
             // callback_url:`${url}/verifypayment?id=${id}&email=${userData.email}&agentid=${propertyData.creator._id}`,
-            callback_url:`/api/verifypayment?id=${id}&email=${userData.email}&agentid=${propertyData.creator._id}`,
+            callback_url:`${url}/verifypayment?id=${id}&email=${userData.email}&agentid=${propertyData.creator._id}`,
             redirect: true,
             prefill: {
                 "name": userData.name,
