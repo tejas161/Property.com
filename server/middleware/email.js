@@ -12,7 +12,7 @@ const ses = new aws.SES({
         secretAccessKey: process.env.AWS_SECRET_KEY,
     },
     apiVersion: process.env.AWS_API_VERSION,
-    region: process.env.AWS_REGION_EMAIL,
+    region: process.env.AWS_REGION,
     defaultProvider,
 });
 

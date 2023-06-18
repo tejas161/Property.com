@@ -119,14 +119,14 @@ const paymentVerification = async (req, res) => {
 
         // res.redirect(`http://localhost:3000/allproperties`);
 
-        res.redirect(`http://107.20.87.217:3000/allproperties`)
+        res.redirect(`http://15.207.100.88:3000/allproperties`)
 
         } else {
 
           
         //  res.redirect(`http://localhost:3000/paymentfailed`);
 
-        res.redirect(`http://107.20.87.217:3000/paymentfailed`);
+        res.redirect(`http://15.207.100.88:3000/paymentfailed`);
         
       
     }

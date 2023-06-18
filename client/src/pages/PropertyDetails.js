@@ -496,7 +496,7 @@ const PropertyDetails = () => {
             width="fit-content"
             sx={{
                 width: '100%',
-                height: '100%'
+                height : startCall ? '100vh' : '100%',
             }}
         >
             {
@@ -522,6 +522,7 @@ const PropertyDetails = () => {
                 pauseOnHover
                 theme="colored"
             />
+         
 
             {propertyData ?
                 <Box sx={{
@@ -1030,6 +1031,8 @@ const PropertyDetails = () => {
 
                 : ""
             }
+
+
 
 
         </Box >

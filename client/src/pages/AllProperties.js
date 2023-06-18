@@ -478,11 +478,11 @@ const AllProperties = () => {
                             >
                                 <MenuItem key="-1" value="">Country</MenuItem>
                                 {
-                                    countriesdata &&
+                                    countriesdata ?
                                     countriesdata.map((countries) => (
                                         <MenuItem key={countries.id}
                                             value={countries.name}>{countries.name}</MenuItem>
-                                    ))
+                                    )) : ""
                                 }
 
                             </Select>

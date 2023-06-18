@@ -154,7 +154,8 @@ const Saved = () => {
 
     return (
         <Box sx={{
-            marginX: '16px'
+            marginX: '16px',
+            height:startCall ? '100vh' : '100%'
         }}>
             {
                 startCall ?

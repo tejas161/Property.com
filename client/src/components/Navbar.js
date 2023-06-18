@@ -75,16 +75,9 @@ const Navbar = () => {
                     "Content-Type": "application/json"
                 },
                 credentials: 'include'
-
-
-
-
             });
-
             const data = await res.json();
             setUserData(data);
-
-
             if (!res.status === 200) {
 
                 const error = new Error(res.error);
@@ -103,10 +96,16 @@ const Navbar = () => {
 
 
             setUserLoggedIn(false);
+            handleLoginOpen();
+
+          
+           
 
         }
 
         setStartCall(false);
+       
+     
 
        
        
@@ -114,6 +113,21 @@ const Navbar = () => {
 
 
     }
+
+   
+    useEffect(() => {
+
+        callMyProfile();
+
+        return () => {
+     
+        };
+        
+
+
+
+
+    }, []);
 
 
     useEffect(() => {
@@ -128,7 +142,7 @@ const Navbar = () => {
 
 
 
-    }, [login, userLoggedIn]);
+    }, [ userLoggedIn]);
 
 
 

@@ -174,7 +174,8 @@ const ListProperty = () => {
         catch (error) {
             // Create a Dialog box on my profile that user not authenticated
             // navigate('/logout');
-           navigate('/');
+           window.location.href='/';
+
         }
     }
 
@@ -624,11 +625,11 @@ const ListProperty = () => {
                                 >
                                     <MenuItem key="-1" value="">Select Country</MenuItem>
                                     {
-                                        countriesdata &&
+                                        countriesdata ?
                                         countriesdata.map((countries) => (
                                             <MenuItem key={countries.id}
                                                 value={countries.name}>{countries.name}</MenuItem>
-                                        ))
+                                        )) : ""
                                     }
 
                                 </Select>

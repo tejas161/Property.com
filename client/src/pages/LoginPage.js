@@ -156,7 +156,7 @@ const LoginPage = ({login,handleLoginOpen,handleLoginClose,handleSignOpen,}) => 
             onChange={handleUser}
           />
            <TextField
-            autoFocus
+            
             margin="dense"
             id="password"
             name="password"

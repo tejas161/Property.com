@@ -224,7 +224,7 @@ const SignUpPage = ({ signup, handleLoginOpen, handleSignClose ,handleOtpOpen,ha
 
                         />
                         <TextField
-                            autoFocus
+                            
                             margin="dense"
                             id="email"
                             name="email"
@@ -241,7 +241,7 @@ const SignUpPage = ({ signup, handleLoginOpen, handleSignClose ,handleOtpOpen,ha
                             inputProps={{
                                 inputMode: 'numeric', pattern: '[0-9]*', maxLength: 10,
                             }}
-                            autoFocus
+                            
                             margin="dense"
                             id="phone"
                             name="phone"
@@ -255,7 +255,7 @@ const SignUpPage = ({ signup, handleLoginOpen, handleSignClose ,handleOtpOpen,ha
 
                         />
                         <TextField
-                            autoFocus
+                            
                             margin="dense"
                             id="password"
                             name="password"
@@ -270,7 +270,7 @@ const SignUpPage = ({ signup, handleLoginOpen, handleSignClose ,handleOtpOpen,ha
                         />
 
                         <TextField
-                            autoFocus
+                            
                             margin="dense"
                             id="cpassword"
                             name="cpassword"
